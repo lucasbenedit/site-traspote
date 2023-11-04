@@ -1,0 +1,73 @@
+.container
+{
+  position: relative;
+  height: 100vh;
+  /* Ajuste a altura conforme necessário */
+}
+
+.search-bar
+{
+  position: absolute;
+  top: 80%;
+  /* Ajuste o valor para posicionar a barra onde desejar */
+  width: 100%;
+  padding: 10px;
+}
+
+/* Definindo estilos para o corpo do site */
+body
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Estilos para os links */
+a
+{
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+/* Estilos para os cabeçalhos */
+h1,
+h2,
+h3
+{
+  color: #333;
+}
+
+/* Estilos para o conteúdo principal */
+.container
+{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para a barra de navegação */
+.navbar
+{
+  background-color: #f5eaea;
+  padding: 10px;
+}
+
+.navbar ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li
+{
+  display: inline;
+  margin-right: 10px;
+}

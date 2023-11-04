@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="script" type="text/js" href="script.js">
+    <title>trasporte </title>
+
+</head>
+
+<body>
+    <title>trasporte</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: url("img/fundo-01.jpg");
+            background-size: cover;
+            font-family: trebuchet MS;
+        }
+
+        header.top {
+            height: 75px;
+            background-image: url("img/Logo.png");
+            background-repeat: no-repeat;
+            background-size: 90px;
+            background-position: 50px 10px;
+            background-color: #000000;
+        }
+
+        ul.MENU {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 80%;
+            margin-left: 20%;
+            height: 50px;
+            padding-top: 0px;
+        }
+
+        header.top nav::after {
+            clear: both;
+            content: '';
+        }
+
+        ul.MENU li {
+            float: left;
+            font-size: 14px;
+            padding: 0 1%;
+            text-align: center;
+            width: 14.66666666666667%;
+        }
+
+        ul.MENU li a {
+            margin: 30px 0;
+            text-decoration: none;
+
+            font-weight: 100;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #eed028;
+            display: block;
+        }
+
+        ul.MENU li a:hover {
+            font-weight: 400;
+        }
+
+        section {
+            width: 1200px;
+            margin: 10px auto;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        section article {
+            display: snone;
+            background: #000000;
+            min-height: 450px;
+            /*transition: all 0.8s;
+    box-shadow: 10px 8px 5px #DDD;*/
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            opacity: 0;
+            border-radius: 10px;
+        }
+
+        section article.first {
+            box-shadow: none;
+            background: none;
+            color: #FFF;
+        }
+
+        section article.show {
+            display: inherit !important;
+            -webkit-animation: swing 1s ease;
+            animation: swing 1s ease;
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+            z-index: 10;
+            opacity: 1;
+            margin-top: 40px;
+        }
+
+        section article.first h2 {
+            font-size: 6em;
+            margin: 0;
+            text-shadow: 4px 4px #AAA;
+        }
+
+        section article.first p {
+            font-size: 2em;
+            text-shadow: 2px 2px #AAA;
+        }
+
+        section article.cars header {
+            border-radius: 10px 10px 0 0;
+            background: #F5F5F5;
+            padding: 10px;
+        }
+
+        section article.cars div.description {
+            width: 50%;
+            float: left;
+            padding: 20px;
+        }
+
+        section article.cars img {
+            width: 30%;
+            margin: 0 5%;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+        }
+
+        @keyframes swing {
+            0% {
+                filter: alpha(opacity=0);
+                opacity: 0;
+                margin-top: 0;
+            }
+
+            100% {
+                filter: alpha(opacity=100);
+                opacity: 1;
+                z-index: 10;
+                margin-top: 40px;
+            }
+
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <header class="top">
+            <nav>
+                <ul class="MENU"> 
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="serviços.php">Serviços</a></li>
+                    <form action="serviços.php" method="POST"></form>
+                    <li><a href="sobrenós.php">Sobre Nós</a></li>
+                    <li><a href="Contato.php">Contato</a></li>
+                    </div>
+                    <form action="pesquisar2.https" method="get">
+                        <input type="text" name="q" placeholder="pesquisar2.https">
+                        <input type="submit" value="Buscar">
+                         <button> 
+                        <a href="login.php">entrar</a>
+                        </button>       
+                </ul>
+        </header>
+    </body>
+
+
+    <body>
+        <!-- Slideshow container -->
+        <!-- Div Pai -->
+        <div class="slideshow-container">
+
+            <!-- Imagens de largura total com número e texto de legenda -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="img/banner1.png" style="width: 100%; height: 400px;">
+                <div class="text">trasporte</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/banner2.png" style="width: 100%; height: 400px;">
+                <div class="text">volta as aula</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/banner3.png" style="width: 100%; height: 400px;">
+                <div class="text">feliz</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="img4.jpg" style="width: 100%; height: 400px;">
+                <div class="text">Zooloógico de Buenos Aires -AG</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="img5.jpg" style="width: 600px; height: 400px;">
+                <div class="text">Praia de Canoa Quebrada - Fortaleza - CE</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="img6.jpg" style="width: 600px; height: 400px;">
+                <div class="text">Madrid - ES</div>
+            </div>
+
+            <!--Botões seguinte e anterior -->
+            <a class="prev" onclick="plusSlides(-1)" title="anterior">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)" title="próximo">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- Os pontos / círculos -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Controles seguinte / anterior
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Controles de imagem em miniatura
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+
+            .b-example-divider {
+                width: 100%;
+                height: 3rem;
+                background-color: rgba(0, 0, 0, .1);
+                border: solid rgba(0, 0, 0, .15);
+                border-width: 1px 0;
+                box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+            }
+
+            .b-example-vr {
+                flex-shrink: 0;
+                width: 1.5rem;
+                height: 100vh;
+            }
+
+            .bi {
+                vertical-align: -.125em;
+                fill: currentColor;
+            }
+
+            .nav-scroller {
+                position: relative;
+                z-index: 2;
+                height: 2.75rem;
+                overflow-y: hidden;
+            }
+
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .btn-bd-primary {
+                --bd-violet-bg: #712cf9;
+                --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+                --bs-btn-font-weight: 600;
+                --bs-btn-color: var(--bs-white);
+                --bs-btn-bg: var(--bd-violet-bg);
+                --bs-btn-border-color: var(--bd-violet-bg);
+                --bs-btn-hover-color: var(--bs-white);
+                --bs-btn-hover-bg: #6528e0;
+                --bs-btn-hover-border-color: #6528e0;
+                --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+                --bs-btn-active-color: var(--bs-btn-hover-color);
+                --bs-btn-active-bg: #5a23c8;
+                --bs-btn-active-border-color: #5a23c8;
+            }
+
+            .bd-mode-toggle {
+                z-index: 1500;
+            }
+        </style>
+        <section>
+            <center>
+
+                <h2>Trabalher Conosco</h2>
+                <p>se você gosta de criança e gosta da aria de pedagogia para ser professor (a)
+                    manda o seu curriculo </p>
+
+                <a href="cliquiaqui "> cliqui aqui</a>
+                <form action="cliquiaqui.html" method="POST"></form>
+
+
+        </section>
+        </center>
+        <center>
+            <iframe width="713" height="401" src="https://www.youtube.com/embed/v8Z9eFZ8aTA"
+                title="Operação Escola Segura Praia Grande" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </center>
+        <style>
+            /* Estilos para o rodapé */
+            footer {
+                background-color: #000000;
+                padding: 0%;
+                text-align: center;
+                font-size: 14px;
+                color: #ffffff;
+
+            }
+        </style>
+
+        <body>
+            <footer>
+
+                <p1>© 2023 Nome da Empresa. Todos os direitos reservados.</p1>
+
+            </footer>
+
+
+
+            </div>
+        </body>
+        </center>
+
+
+        </head>
+        <style>
+            /* Estilos para o rodapé */
+            footer {
+                background-color: #000000;
+                padding: 1px;
+                text-align: center;
+                font-size: 14px;
+                color: #ffffff;
+
+            }
+        </style>
+
+        <body>
+            <footer>
+                <p1>© 2023 Nome da Empresa. Todos os direitos reservados.</p1>
+            </footer>
+        </body>
+
+
+
+</html>
